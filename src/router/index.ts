@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Index from '../pages/index.vue'
-import Blog from '../pages/blog.vue'
-import BlogList from '../pages/bloglist.vue'
+import Index from '../views/index.vue'
+import Blog from '../views/blog.vue'
+import BlogList from '../views/bloglist.vue'
 
 const routes = [
   {
