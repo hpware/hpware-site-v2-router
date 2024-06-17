@@ -1,26 +1,35 @@
 <script setup lang="ts">
-import TheWelcome from './components/TheWelcome.vue'
-import Footer from './components/Footer.vue'
 import Socials from'./components/Socials.vue'
-import SideStuff from './components/SideStuff.vue'
+import Footer from './components/Footer.vue'
 </script>
-
 <template>
-  <header>
-    <img alt="hpware" class="logo" src="./assets/pfp2.png" />
+    <header>
+    <img alt="hpware" class="logo" style="border-radius: 50%;" src="https://storage.hpware.hwtw.cc/img/index-pfp.png" />
     <div class="wrapper">
       <Socials />
     </div>
-  </header>
 
-  <main>
-    <SideStuff />
-  </main>
-  <footer>
+  </header>
+    <router-view></router-view>
+    <footer>
     <Footer />
   </footer>
 </template>
 
+<script lang="ts">
+export default {
+  name: 'App'
+}
+</script>
+
+<style>
+nav {
+  margin-bottom: 1em;
+}
+nav a {
+  margin-right: 1em;
+}
+</style>
 <style scoped>
 header {
   line-height: 1.5;
